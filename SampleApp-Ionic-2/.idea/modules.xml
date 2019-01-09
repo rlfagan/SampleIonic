@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/SampleApp-Ionic-2.iml" filepath="$PROJECT_DIR$/SampleApp-Ionic-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioEOCore/eoCore/eoCore.iml" filepath="$PROJECT_DIR$/AndroidStudioEOCore/eoCore/eoCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioTealeafMod/tealeafMod/tealeafMod.iml" filepath="$PROJECT_DIR$/AndroidStudioTealeafMod/tealeafMod/tealeafMod.iml" />
     </modules>
   </component>
 </project>

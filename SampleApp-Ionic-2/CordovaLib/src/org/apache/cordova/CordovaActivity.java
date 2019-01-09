@@ -18,9 +18,15 @@
 */
 package org.apache.cordova;
 
-import android.annotation.SuppressLint;
+import java.util.ArrayList;
+import java.util.Locale;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -36,12 +42,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.Locale;
 
 /**
  * This class is the main Android activity that represents the Cordova
@@ -123,7 +123,7 @@ public class CordovaActivity extends Activity {
         if (preferences.getBoolean("Fullscreen", false)) {
             // NOTE: use the FullscreenNotImmersive configuration key to set the activity in a REAL full screen
             // (as was the case in previous cordova versions)
-            if ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) && !preferences.getBoolean("FullscreenNotImmersive", false)) {
+            if (!preferences.getBoolean("FullscreenNotImmersive", false)) {
                 immersiveMode = true;
             } else {
                 getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -319,6 +319,7 @@ public class CordovaActivity extends Activity {
     /**
      * Called when view focus is changed
      */
+    @SuppressLint("InlinedApi")
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);

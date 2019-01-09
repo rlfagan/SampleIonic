@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AndroidStudioEOCore/eoCore" />
+            <option value="$PROJECT_DIR$/AndroidStudioTealeafMod/tealeafMod" />
             <option value="$PROJECT_DIR$/CordovaLib" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
