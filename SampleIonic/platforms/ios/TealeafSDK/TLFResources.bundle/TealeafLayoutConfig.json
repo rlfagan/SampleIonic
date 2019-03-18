@@ -1,12 +1,25 @@
 {
     "AutoLayout": {
-        "MainViewController": {
+        "IBMGlobalScreenSettings":{
             "do": true,
-            "screenViewName": "MyApp",
+            "screenViewName": "",
             "delay": 500,
             "takeScreenShot": false,
-            "isWebView": true,
-            "numberOfWebviews": 1
+            "isWebView": false,
+            "numberOfWebviews": 0,
+            "CaptureScreenContents": true,
+            "CaptureScreenVisits": true,
+            "CaptureLayoutOn": 2
+        },
+        "MyViewControllerExample": {
+            "do": false,
+            "screenViewName": "MyScreenViewName",
+            "delay": 500,
+            "takeScreenShot": false,
+            "isWebView": false,
+            "numberOfWebviews": 0,
+            "CaptureScreenContents": false,
+            "CaptureLayoutOn": 1
         }
     },
     "AppendMapIds": {
