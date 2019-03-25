@@ -19,8 +19,21 @@
              Windows: function() {
                     return navigator.appVersion.match(/Windows NT/i) ? true : false;
              }
-		};	
-		if(isMobile.iOS() && isPlatform.iOS())
-			document.write('<link rel="stylesheet" href="../css/iphone.css" type="text/css" />');
-	    if(isMobile.Android() && isPlatform.Android())
-			document.write('<link rel="stylesheet" href="../css/android.css" type="text/css" />');
+		};
+
+        function loadCSS() {
+            var css = document.createElement("link");
+            css.setAttribute("rel", "stylesheet");
+            css.setAttribute("type", "text/css");
+            if (isMobile.iOS() && isPlatform.iOS()) {
+                css.setAttribute("href", "css/iphone.css");
+            }
+            else if (isMobile.Android() && isPlatform.Android()) {
+                css.setAttribute("href", "css/android.css");
+            }
+            if (css.hasAttribute("href")) {
+                document.getElementsByTagName("head")[0].appendChild(css)
+            }
+        }
+
+        loadCSS();

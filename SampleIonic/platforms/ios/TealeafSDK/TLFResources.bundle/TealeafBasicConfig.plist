@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>AppKey</key>
-	<string>6d7e83e5753f46758907b79335a65c7b</string>
+	<string>93b07040e94f4d979ccded272b3a15c1</string>
 	<key>CaptureNativeGesturesOnWebview</key>
 	<false/>
-	<key>Connection</key>
+	<key>connection</key>
 	<integer>5</integer>
 	<key>DisableAutoInstrumentation</key>
 	<false/>
@@ -62,8 +62,8 @@
 	<key>PercentToCompressImage</key>
 	<integer>100</integer>
 	<key>PostMessageUrl</key>
-	<string>http://devqa2.collector.tealeaf.test.spop-sl.com/collector/collectorPost</string>
-	<key>PrintScreen</key>
+	<string>https://prodqa-collector.tealeaf.ibmcloud.com/collector/collectorPost</string>
+	<key>printScreen</key>
 	<integer>3</integer>
 	<key>ScreenshotFormat</key>
 	<string>png</string>
