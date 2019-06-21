@@ -23,7 +23,7 @@ Go to **SampleIonic** directory and run
 
 This will download all the third party tools.
 
-In your xcode, go to File Menu >> Workspace Settings and select "Legacy Build System" for "Build System:"
+When building with xcode; in your xcode, go to File Menu >> Workspace Settings and select "Legacy Build System" for "Build System:"
 
 # Notes
 **DOM Diff** is now supported in **SaaS** only. This application has **DOM Diff** enabled. If you need to test for onpremise system. You will need to change from:
