@@ -26,6 +26,7 @@ This will download all the third party tools.
 ## Additional iOS instructions
 
 After npm install, goto platforms/ios folder and depending on how old your repo is run
+
 **pod install**
 
 or
