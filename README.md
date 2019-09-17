@@ -35,7 +35,7 @@ or
 
 By default IBMTealeafDebug pod will be used. If you want to use IBMTealeaf pod then open the Podfile under platforms/ios and change pod 'IBMTealeafDebug' to pod 'IBMTealeaf'
 
-When building with xcode; in your xcode, go to File Menu >> Workspace Settings and select "Legacy Build System" for "Build System:"
+When building with xcode 10.2 or earlier; in your xcode, go to File Menu >> Workspace Settings and select "Legacy Build System" for "Build System:"
 
 # Notes
 **DOM Diff** is now supported in **SaaS** only. This application has **DOM Diff** enabled. If you need to test for onpremise system. You will need to change from:
