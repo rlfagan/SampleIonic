@@ -30,7 +30,7 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.4.1'
         classpath 'org.jacoco:org.jacoco.core:0.8.1'
         classpath 'gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:1.6.3'
     }
@@ -61,8 +61,8 @@ allprojects {
         //Integer - We ALWAYS compile with the latest by defaulttargetSdkVersion = 28
 
         minSdkVersion = 16
-        targetSdkVersion = 26
-        compileSdkVersion = 26
+        targetSdkVersion = 28
+        compileSdkVersion = 28
         buildToolsVersion = '28.0.3'
 
         supportLibVersion = '26.1.0'
