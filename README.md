@@ -50,3 +50,6 @@ to
 
 * defaultNativeDomCaptureConfiguration.js
 * defaultNativeDomCaptureGesturesConfigurationHammer1.js
+
+# Notes
+**Android ionic test application currently has issues and replay's blank on the master branch**
