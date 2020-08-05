@@ -91,7 +91,7 @@ public class MainActivity extends CordovaActivity
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        webView.addJavascriptInterface(new JavaScriptInterface(this.getApplicationContext(), Tealeaf.getPropertyName((View)webView).getId()), "tlBridge");
+        webView.addJavascriptInterface(new JavaScriptInterface(this.getApplicationContext(), webView, Tealeaf.getPropertyName((View)webView).getId()), "tlBridge");
     }
 
     public class TestChromeClient extends SystemWebChromeClient {
