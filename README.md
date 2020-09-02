@@ -1,4 +1,6 @@
 # Sample Code for Ionic with Tealeaf Instrumented
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frlfagan%2FSampleIonic.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frlfagan%2FSampleIonic?ref=badge_shield)
+
 
 Built with: 
 * Ionic 5.0.0-beta.21
@@ -53,3 +55,7 @@ to
 
 # Notes
 **Android ionic test application currently has issues and replay's blank on the master branch**
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frlfagan%2FSampleIonic.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frlfagan%2FSampleIonic?ref=badge_large)
