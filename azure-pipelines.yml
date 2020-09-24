@@ -19,6 +19,5 @@ steps:
   displayName: 'Run a multi-line script'
   before_script:
   - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash"
-script:
   
   - fossa
