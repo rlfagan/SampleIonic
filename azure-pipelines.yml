@@ -1,3 +1,24 @@
-script:
-      - curl https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh 
-        
+trigger:
+ - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+
+# Add the steps for FOSSA CLI installation and analysis
+- script: |
+    curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+    export FOSSA_API_KEY=4a066fcabdf635244af2bb53a656565656656545
+    fossa analyze
+  displayName: 'Install and Run FOSSA Analyze'
